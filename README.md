@@ -1,0 +1,2 @@
+# inventario
+inventariod e farmacia
