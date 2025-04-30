@@ -1,0 +1,107 @@
+/* Custom CSS for Pharmacy Inventory Management System */
+
+/* Body and general styles */
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Navbar customization */
+.navbar-brand svg {
+    margin-right: 0.5rem;
+}
+
+/* Card customization */
+.card {
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.card-header {
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+}
+
+/* Tables */
+.table th {
+    background-color: #f8f9fa;
+}
+
+/* Form controls */
+.form-control:focus, .form-select:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Badge customization */
+.badge {
+    font-weight: 500;
+    padding: 0.35em 0.65em;
+}
+
+/* Print-specific styles */
+@media print {
+    header, footer, .no-print, form, .btn, #btnImprimir {
+        display: none !important;
+    }
+    
+    body {
+        background-color: white;
+    }
+    
+    .card {
+        border: none !important;
+        box-shadow: none !important;
+    }
+    
+    .card-header {
+        background-color: white !important;
+        color: black !important;
+        border-bottom: 2px solid #dee2e6;
+    }
+    
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .card-body {
+        padding: 0;
+    }
+    
+    .table {
+        width: 100% !important;
+    }
+    
+    /* Format page breaks */
+    .page-break {
+        page-break-after: always;
+    }
+}
+
+/* Select2 customization */
+.select2-container--bootstrap-5 .select2-selection {
+    min-height: calc(1.5em + 0.75rem + 2px);
+}
+
+/* Custom icon colors */
+.text-primary-light {
+    color: #8bb9fe;
+}
+
+/* Custom spacing */
+.mt-6 {
+    margin-top: 4rem;
+}
+
+.mb-6 {
+    margin-bottom: 4rem;
+}
